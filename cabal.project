@@ -9,9 +9,19 @@ packages:
   what4-abc/
   what4-blt/
   what4-transition-system/
-  
+
 optional-packages:
   dependencies/abcBridge/
   dependencies/aig/
   dependencies/blt/
   dependencies/language-sally/
+
+source-repository-package
+  type: git
+  location: https://github.com/GaloisInc/parameterized-utils
+  tag: 8bb69110b5c9658c94ef8dcf9f3028d6e7ad32e6
+
+allow-newer:
+  binary-parsers:bytestring,
+  bv-sized:bytestring,
+  lumberjack:base
